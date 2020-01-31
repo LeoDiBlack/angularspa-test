@@ -1,0 +1,34 @@
+{
+  "main-box": {
+    "character": "Pope Francis?",
+    "description": "Lorem Ipsum",
+    "wikipedia-url": "url",
+    "image": "image"
+  },
+  "content-boxes": [
+    {
+      "character": "Kanye West",
+      "description": "Lorem Ipsum",
+      "category": "Entertainment",
+      "image": "image"
+    },
+    {
+      "character": "Mark Zuckerberg",
+      "description": "Lorem Ipsum",
+      "category": "Business",
+      "image": "image"
+    },
+    {
+      "character": "Cristina Fernandez De Kirchner",
+      "description": "Lorem Ipsum",
+      "category": "Politics",
+      "image": "image"
+    },
+    {
+      "character": "Malala Yousafzai",
+      "description": "Lorem Ipsum",
+      "category": "Entertainment",
+      "image": "image"
+    }
+  ]
+}

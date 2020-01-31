@@ -1,0 +1,62 @@
+.nav {
+  width: 100%;
+  z-index: 2;
+}
+
+.nav>a:nth-child(1) {
+  font-size: 24px;
+}
+
+.nav a {
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.hero {
+  color: white;
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  /* Text styles */
+  font-size: 5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Text styles */
+  color: white;
+  /* CHANGE THIS LINE */
+  text-decoration: none;
+  font-size: 1.5em;
+
+  /* Border styles */
+  border: 3px solid white;
+  /* CHANGE THIS LINE */
+  border-radius: 20px;
+}

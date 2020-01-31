@@ -1,0 +1,52 @@
+.content-box {
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0;
+  color: black;
+  .container {
+    .row {
+      &.box{
+        padding-top: 50%;
+      }
+
+      &.thumbs{
+        font-size: 30px;
+      }
+    }
+  }
+
+  .content-box-thumbs-up {
+    text-align: left;
+    background-color: #2EBDB6;
+  } 
+
+  .content-box-thumbs-down {
+    text-align: right;
+    font-size: 30px;
+    background-color: #FFB533;
+  }
+
+  p {
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 2;
+
+    // &::before{
+    //   font-weight: 900;
+    //   font-family: "Font Awesome 5 Free";
+    //   content: "\f164";
+    //   background-color: yellow;
+    // }
+  }
+}
