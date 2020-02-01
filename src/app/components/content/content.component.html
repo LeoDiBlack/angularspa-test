@@ -1,37 +1,38 @@
 <div class="container content">
-  <div class="container-fluid">
-    <div class="gray-info-bar my-3">
-      <div class="row">
-        <div class="col-4">
-          Be Counted
+  <div class="row">
+    <div class="col-12">
+      <div class="container-fluid">
+        <div class="gray-info-bar my-3">
+          <div class="row">
+            <div class="col-3">
+              <div class="row text-center">
+                <div class="col-12">Speak Out. Be Heard</div>
+                <div class="col-12">Be Counted</div>
+              </div>
+            </div>
+            <div class="col-8">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            </div>
+            <div class="col-1">
+              <fa-icon [icon]="faTimes"></fa-icon>
+            </div>
+          </div>
         </div>
-        <div class="col-8">
-          Rule of Thumb
+        <h1>Votes</h1>
+        <div class="row">
+          <div class="col-6" *ngFor="let person of contentBoxes; let i = index">
+            <app-content-box [contentBoxContent]="person"></app-content-box>
+          </div>
         </div>
-      </div>
-    </div>
-    <h1>Votes</h1>
-    <div class="row">
-      <div class="col-6">
-        <app-content-box></app-content-box>
-      </div>
-      <div class="col-6">
-        <app-content-box></app-content-box>
-      </div>
-      <div class="col-6">
-        <app-content-box></app-content-box>
-      </div>
-      <div class="col-6">
-        <app-content-box></app-content-box>
-      </div>
-    </div>
-    <div class="image-bar-cta my-4">
-      <div class="row">
-        <div class="col-7">
-          Is there anyone else you would want us to add?
-        </div>
-        <div class="col-5">
-          CTA
+        <div class="image-bar-cta my-4">
+          <div class="row">
+            <div class="col-7">
+              Is there anyone else you would want us to add?
+            </div>
+            <div class="col-5">
+              CTA
+            </div>
+          </div>
         </div>
       </div>
     </div>

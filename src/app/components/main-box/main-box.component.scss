@@ -1,25 +1,24 @@
 .main-box {
   position: relative;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0;
   text-align: left;
   display: flex;
   flex-direction: column;
   width: 100%;
-  pointer-events: auto;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: .3rem;
-  outline: 0;
 
   .main-box-thumbs-up {
     text-align: center;
     font-size: 44px;
-    background-color: #2EBDB6;
+    background-color:rgba(46, 189, 182, .7);
+    cursor: pointer;
   }
 
   .main-box-thumbs-down {
     text-align: center;
     font-size: 44px;
-    background-color: #FFB533;
+    background-color: rgba(255, 181, 51, .7);
+    cursor: pointer;
   }
 
   &:before {
@@ -39,9 +38,38 @@
     filter: alpha(opacity=50)
   }
 
-  p {
-    position: relative;
-    z-index: 2;
+  .col-12 {
+    padding: 0 30px;
+  }
+
+  .whatsYourOpinion {
+    margin-bottom: 0;
+    color: whitesmoke;
+    font-weight: lighter;
+    line-height: 0;
+  }
+
+  .whatsYourVeredict {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 22px;
+    font-weight: lighter;
+    margin: 0;
+  }
+
+  .character {
+    font-size: 55px;
+    margin-inline-start: -3px;
+  }
+
+  .characterUrl {
+    a {
+      color: whitesmoke;
+      text-decoration: underline;
+    }
   }
 
   h1 {

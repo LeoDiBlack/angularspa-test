@@ -2,4 +2,10 @@
   .gray-info-bar {
     background-color: #EBEBEB;
   }
+
+  app-content-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }

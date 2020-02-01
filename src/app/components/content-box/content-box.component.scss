@@ -1,52 +1,52 @@
 .content-box {
   position: relative;
   text-align: left;
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  pointer-events: auto;
-  background-clip: padding-box;
+  height: 100%;
   border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: .3rem;
-  outline: 0;
-  color: black;
+  border-radius: 0;
+  color: white;
+
   .container {
+    height: 100%;
+    display: grid;
+    background-image: url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     .row {
-      &.box{
+      &.box {
         padding-top: 50%;
       }
 
-      &.thumbs{
+      &.thumbs {
         font-size: 30px;
+        align-self: flex-end;
+
+        .content-box-thumbs-up {
+          text-align: left;
+          font-size: 30px;
+          background-color:rgba(46, 189, 182, .7);
+          cursor: pointer;
+        }
+      
+        .content-box-thumbs-down {
+          text-align: right;
+          font-size: 30px;
+          background-color: rgba(255, 181, 51, .7);
+          cursor: pointer;
+        }
       }
     }
   }
 
-  .content-box-thumbs-up {
-    text-align: left;
-    background-color: #2EBDB6;
-  } 
-
-  .content-box-thumbs-down {
-    text-align: right;
-    font-size: 30px;
-    background-color: #FFB533;
-  }
-
-  p {
-    position: relative;
-    z-index: 2;
-  }
-
-  h1 {
-    position: relative;
-    z-index: 2;
-
-    // &::before{
-    //   font-weight: 900;
-    //   font-family: "Font Awesome 5 Free";
-    //   content: "\f164";
-    //   background-color: yellow;
-    // }
+  .character {
+    .content-box-thumbs-up {
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      background-color: #2EBDB6;
+    }
   }
 }

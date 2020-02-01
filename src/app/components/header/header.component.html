@@ -1,23 +1,40 @@
 <div class="container-fluid hero">
   <div class="row">
-
-    <div class="container nav">
-      <a href="#">Rule of Thumb</a>
-      <a href="#">Past Trials</a>
-      <a href="#">How It works</a>
-      <a href="#">Log In / Sign Up</a>
-      <a href="#">Contacts</a>
-    </div>
-
-    <div class="container-fluid">
-      <div class="container">
+    <div class="col-12">
+      <div class="container navBar my-4">
         <div class="row">
+          <div class="col-6"><a href="#" class="mainLogo">Rule of Thumb.</a></div>
           <div class="col-6">
-            <app-main-box></app-main-box>
+            <a href="#">Past Trials</a>
+            <a href="#">How It works</a>
+            <a href="#">Log In / Sign Up</a>
+            <a href="#" class="search"><fa-icon [icon]="faSearch" class="search"> class="search"</fa-icon></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <app-main-box [mainBoxContent]="mainBox"></app-main-box>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="row">
+    <div class="col-4 py-1 pollClosing">
+      <span>CLOSING IN</span>
+    </div>
+    <div class="col-8 py-1 pollDays">
+      <span>22 Days</span>
+    </div>
   </div>
 </div>

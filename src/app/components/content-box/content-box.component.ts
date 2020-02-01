@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,12 +8,16 @@ import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 })
 export class ContentBoxComponent implements OnInit {
 
+  @Input()
+  public contentBoxContent: any;
+
   faThumbsUp = faThumbsUp;
   faThumbsDown = faThumbsDown;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.contentBoxContent);
   }
 
 }

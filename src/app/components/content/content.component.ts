@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import data from '../../../content.json';
+import { Component, OnInit, Input } from '@angular/core';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-content',
@@ -8,11 +8,15 @@ import data from '../../../content.json';
 })
 export class ContentComponent implements OnInit {
 
-  json:any = data;
+  faTimes = faTimes;
+
+  @Input()
+  public contentBoxes: any;
+
   constructor() { }
 
   ngOnInit() {
-    console.log(this.json);
+
   }
 
 }

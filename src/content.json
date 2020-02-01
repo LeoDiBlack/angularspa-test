@@ -2,7 +2,8 @@
   "main-box": {
     "character": "Pope Francis?",
     "description": "Lorem Ipsum",
-    "wikipedia-url": "url",
+    "moreInformation": "More Information",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Francis",
     "image": "image"
   },
   "content-boxes": [

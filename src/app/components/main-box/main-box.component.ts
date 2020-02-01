@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
+import { faWikipediaW } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-main-box',
@@ -8,12 +9,18 @@ import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 })
 export class MainBoxComponent implements OnInit {
 
+  faWikipediaW = faWikipediaW;
+
+  @Input()
+  public mainBoxContent: any;
+
   faThumbsUp = faThumbsUp;
   faThumbsDown = faThumbsDown;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
