@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,6 +8,10 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent implements OnInit {
 
+  @ViewChild('heroBanner', {
+    static: false
+  }) heroBanner: ElementRef;
+
   faSearch = faSearch;
 
   @Input()
@@ -16,7 +20,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
+  }
 
+  ngAfterViewInit() {
+    this.heroBanner.nativeElement.style.backgroundImage = "url(" + this.mainBox.image + ")";
   }
 
 }

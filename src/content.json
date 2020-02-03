@@ -4,32 +4,44 @@
     "description": "Lorem Ipsum",
     "moreInformation": "More Information",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Francis",
-    "image": "image"
+    "image": "https://cruxnow.com/wp-content/uploads/2016/12/20160914T0844-5137-CNS-POPE-AUDIENCE-PRINCES.jpg"
   },
   "content-boxes": [
     {
+      "id": "charOne",
       "character": "Kanye West",
       "description": "Lorem Ipsum",
       "category": "Entertainment",
-      "image": "image"
+      "image": "https://pmcfootwearnews.files.wordpress.com/2019/03/rexfeatures_10010937bx.jpg",
+      "thumbsUp": 5,
+      "thumbsDown": 10
     },
     {
+      "id": "charTwo",
       "character": "Mark Zuckerberg",
       "description": "Lorem Ipsum",
       "category": "Business",
-      "image": "image"
+      "image": "http://static3.businessinsider.com/image/5ace1c86146e711a008b4594-2400/ap18100777356361.jpg",
+      "thumbsUp": 15,
+      "thumbsDown": 11
     },
     {
+      "id": "charThree",
       "character": "Cristina Fernandez De Kirchner",
       "description": "Lorem Ipsum",
       "category": "Politics",
-      "image": "image"
+      "image": "https://thespeechatimeforchoosing.files.wordpress.com/2015/10/cristina-fernc3a1ndez-de-kirchner.jpg",
+      "thumbsUp": 9,
+      "thumbsDown": 11
     },
     {
+      "id": "charFour",
       "character": "Malala Yousafzai",
       "description": "Lorem Ipsum",
       "category": "Entertainment",
-      "image": "image"
+      "image": "https://peopledotcom.files.wordpress.com/2017/01/malala-yousafzai.jpg",
+      "thumbsUp": 12,
+      "thumbsDown": 8
     }
   ]
 }

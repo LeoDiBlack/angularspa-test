@@ -3,4 +3,25 @@
     border-top: 2px dotted gray;
     margin: 0;
   }
+
+  .row {
+    align-items: center;
+  }
+
+  .footer-nav {
+    a {
+      color: #838383;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .social {
+    text-align: end;
+    fa-icon {
+      font-size: 30px;
+    }
+  }
 }

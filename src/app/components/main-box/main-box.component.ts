@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import { faWikipediaW } from '@fortawesome/free-brands-svg-icons';
 
@@ -8,6 +8,10 @@ import { faWikipediaW } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./main-box.component.scss']
 })
 export class MainBoxComponent implements OnInit {
+
+  @ViewChild('mainBoxBanner', {
+    static: false
+  }) mainBoxBanner: ElementRef;
 
   faWikipediaW = faWikipediaW;
 
@@ -21,6 +25,10 @@ export class MainBoxComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  ngAfterViewInit() {
+    //this.mainBoxBanner.nativeElement.style.backgroundImage = "url(" + this.mainBoxContent.image + ")";
   }
 
 }
