@@ -9,8 +9,7 @@
 
   .container {
     height: 100%;
-    display: grid;
-    background-image: url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+    padding-bottom: 15%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -18,35 +17,66 @@
     .row {
       &.box {
         padding-top: 50%;
+        height: 100%;
+        align-items: flex-end;
       }
 
       &.thumbs {
         font-size: 30px;
-        align-self: flex-end;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
 
         .content-box-thumbs-up {
           text-align: left;
           font-size: 30px;
-          background-color:rgba(46, 189, 182, .7);
-          cursor: pointer;
+          background-color: rgba(46, 189, 182, .7);
         }
-      
+
         .content-box-thumbs-down {
           text-align: right;
           font-size: 30px;
           background-color: rgba(255, 181, 51, .7);
-          cursor: pointer;
         }
       }
     }
   }
 
   .character {
+    padding: 0;
+    position: absolute;
+    bottom: 42%;
     .content-box-thumbs-up {
       width: 25px;
       height: 25px;
       text-align: center;
       background-color: #2EBDB6;
+    }
+  }
+
+  .voting {
+    font-size: 18px;
+
+    .selected {
+      border: 1px solid white;
+    }
+
+    .col-lg-1 {
+      align-self: center;
+      cursor: pointer;
+    }
+
+    .content-box-thumbs-up {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      background-color: #2EBDB6;
+    }
+    .content-box-thumbs-down {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      background-color: #FFAD1D;
     }
   }
 }

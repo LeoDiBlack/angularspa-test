@@ -1,32 +1,37 @@
 <div class="content-box my-3">
-  <div class="container">
+  <div class="container" #containerBox>
     <div class="row box">
-      <div class="col-lg-12">
+      <div class="col-lg-1 character">
+        <div class="content-box-thumbs-up">
+          <fa-icon [icon]="faThumbsUp"></fa-icon>
+        </div>
+      </div>
+      <div class="col-lg-11">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-1 character">
-              <div class="content-box-thumbs-up">
-                <fa-icon [icon]="faThumbsUp"></fa-icon>
-              </div>
-            </div>
-            <div class="col-lg-11">
+            <div class="col-lg-12">
               <h1>{{contentBoxContent.character}}</h1>
               <span><strong>1 Month Ago</strong> {{contentBoxContent.category}}</span>
               <p>{{contentBoxContent.description}}</p>
               <p>More Information</p>
-              <div class="row">
-                <div class="col-lg-2">
-                  <div class="content-box-thumbs-up">
+              <div class="row voting" [hidden]="!voted">
+                <div class="col-lg-5">
+                  <button class="btn btn-outline-light" (click)="voted = false">Vote Again</button>
+                </div>
+              </div>
+              <div class="row voting" [hidden]="voted">
+                <div class="col-lg-1">
+                  <div class="content-box-thumbs-up" (click)="thumbSelection = 'faThumbsUp'" [ngClass]="thumbSelection == 'faThumbsUp' ? 'selected' : ''">
                     <fa-icon [icon]="faThumbsUp"></fa-icon>
                   </div>
                 </div>
-                <div class="col-lg-2">
-                  <div class="content-box-thumbs-up">
-                    <fa-icon [icon]="faThumbsUp"></fa-icon>
+                <div class="col-lg-1">
+                  <div class="content-box-thumbs-down" (click)="thumbSelection = 'faThumbsDown'" [ngClass]="thumbSelection == 'faThumbsDown' ? 'selected' : ''">
+                    <fa-icon [icon]="faThumbsDown"></fa-icon>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <button class="btn btn-outline-light">Vote Now</button>
+                  <button class="btn btn-outline-light" (click)="calcThumbs()">Vote Now</button>
                 </div>
               </div>
             </div>
@@ -34,12 +39,12 @@
         </div>
       </div>
     </div>
-    <div class="row thumbs">
+    <div class="row thumbs" #rowThumbs>
       <div class="col-lg-6 content-box-thumbs-up">
-        <fa-icon [icon]="faThumbsUp"></fa-icon>
+        <fa-icon [icon]="faThumbsUp"></fa-icon> {{thumbsUpPercentage}}%
       </div>
       <div class="col-lg-6 content-box-thumbs-down">
-        <fa-icon [icon]="faThumbsDown"></fa-icon>
+        {{thumbsDownPercentage}}% <fa-icon [icon]="faThumbsDown"></fa-icon>
       </div>
     </div>
   </div>
